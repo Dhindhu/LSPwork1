@@ -1,2 +1,3 @@
 # LSPwork1
-First work given on class: Make a hello world code in Java
+All Large Scale Programming projects will be carried out here.
+First work given in class: Make a hello world code in Java
