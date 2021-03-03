@@ -5,24 +5,32 @@ import java.util.*;
 import org.howard.edu.lsp.assignment4.implementation.IntegerSet;
 import org.howard.edu.lsp.assignment4.implementation.IntegerSetException;
 
-/* 
+/**
  * Driver class to test IntegerSet class 
- * 
  * @author Dhindhu
  */
-
-
 public class IntegerSetDriver {
+	/**
+	 * 
+	 * @param args String
+	 * @throws IntegerSetException if set is empty and operation performed
+	 */
 	   public static void main(String[] args) throws IntegerSetException {
-		   //Create two ArrayLists to pass in values 
+		   /*
+		    * Create two ArrayLists to pass in values 
+		    */
 		   ArrayList<Integer> list1= new ArrayList<>();
 		   ArrayList<Integer> list2= new ArrayList<>();
 		     		     
-		   //Set the ArrayList to IntegerSet
+		   /*
+		    * Set the ArrayList to IntegerSet
+		    */
 		   IntegerSet set1= new IntegerSet(list1);
 		   IntegerSet set2= new IntegerSet(list2);
 		     
-		   //Test add, populate set1 with values
+		   /*
+		    * Test add, populate set1 with values
+		    */
 		   set1.add(1);
 		   set1.add(3);
 		   set1.add(5);
@@ -31,7 +39,9 @@ public class IntegerSetDriver {
 		   set1.add(4);
 		   set1.add(35);
 		     
-		   //Test add, populate set2 with values
+		   /*
+		    * Test add, populate set2 with values
+		    */
 		   set2.add(1);
 		   set2.add(5);
 		   set2.add(7);
@@ -40,7 +50,9 @@ public class IntegerSetDriver {
 		   set2.add(67);
 		   set2.add(100);
 
-		   //check the length of both sets
+		   /*
+		    * check the length of both sets
+		    */
 		   int len1 = set1.length();
 		   int len2 = set2.length();
 		   
@@ -54,13 +66,17 @@ public class IntegerSetDriver {
 		   System.out.println("The largest element in set1 is " + set1.largest());
 		   System.out.println("The smallest element in set2 is " + set2.smallest());
 		   
-		   //set1.clear();
+		   /*
+		    * set1.clear();
+		    */
 		   
 		   set2.remove(2);
 		   set2.remove(4);
 		   set2.remove(7);
 		    
-		 //check the length of both sets
+		 /*
+		  * check the length of both sets
+		  */
 		   int len3 = set1.length();
 		   int len4 = set2.length();
 		   
@@ -74,14 +90,20 @@ public class IntegerSetDriver {
 		   System.out.println("The largest element in set1 is " + set1.largest());
 		   System.out.println("The smallest element in set2 is " + set2.smallest());
 		   
-		   //set1.union(set2);		     
-		   //System.out.println("The union of both sets is " + set1.getlist() );	
+		   /*
+		    * set1.union(set2);		
+		    * System.out.println("The union of both sets is " + set1.getlist() );     
+		    */		   	
 		   
-		   //set1.intersection(set2);		     
-		   //System.out.println("The intersection of the sets is "+set1.getlist() );		  
+		   /*
+		    * set1.intersection(set2);		     
+		    * System.out.println("The intersection of the sets is "+set1.getlist() );		  
+		    */
 		   
-		   //set1.difference(set2);
-		   //System.out.println("The difference is " + set1.getlist());
+		   /*
+		    * set1.difference(set2);  
+		    * System.out.println("The difference is " + set1.getlist());
+		    */
 		     
 		   
 		   /*
